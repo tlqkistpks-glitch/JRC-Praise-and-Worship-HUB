@@ -758,8 +758,10 @@ const SONGS = [
       { label: "Intro", lines: [
         { chordLine: "F  Bb  Gm  Cm  F  Bb" },
       ]},
-      { label: "Verse", lines: [
+      { label: "Chorus", lines: [
         { chordLine: "Bb  F  Gm  Eb  F  Bb  Gm  Cm  F  Bb" },
+      ]},
+      { label: "Verse", lines: [
         { chordLine: "Gm  D  Eb  F  Bb" },
         { chordLine: "Gm  Gm7  Eb  C  F" },
       ]},
