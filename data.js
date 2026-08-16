@@ -850,4 +850,547 @@ const SONGS = [
     ],
   },
 
+  // ---------------------------------------------------------------------
+  {
+    id: "elim-is-my-home",
+    title: "Elim Is My Home",
+    key: "G",
+    favorite: false,
+    note: "Chords only, transcribed as noted.",
+    sections: [
+      { label: "Intro", lines: [
+        { chordLine: "G  D  G  D" },
+      ]},
+      { label: "Verse", lines: [
+        { chordLine: "G  D  G  D  Em  A" },
+        { chordLine: "F#m  G  F#m  G  A" },
+      ]},
+      { label: "Refrain", lines: [
+        { chordLine: "F#m  Bm7  Em  A" },
+        { chordLine: "F#m  Bm7  E" },
+        { chordLine: "F#m  Bm  Em  A   F#  Bm  Bm7  E  A  D" },
+      ]},
+      { label: "Verse (8 counts)", lines: [
+        { chordLine: "G  D  G  D  G  D  Em  A" },
+        { chordLine: "F#m  G  F#m  G  A" },
+      ]},
+      { label: "Refrain (2x)", lines: [
+        { chordLine: "F#m  Bm7  Em  A" },
+        { chordLine: "F#m  Bm7  E" },
+        { chordLine: "F#m  Bm  Em  A   F#  Bm  Bm7  E  A  D" },
+      ]},
+      { label: "Ending", lines: [
+        { chordLine: "Bm  Bm7  Em  A  D" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "come-holy-spirit-fall-on-me",
+    title: "Come Holy Spirit",
+    subtitle: "(\u201cFall on Me Now\u201d \u2014 City Harvest Church)",
+    key: "G",
+    favorite: false,
+    note: "Published, copyrighted song by City Harvest Church. Chords transcribed from the official chart; lyrics intentionally left out \u2014 please add them yourself using the [Chord]lyric format. Your team also had a chat note with a different key/arrangement (in E, with a key-change bridge to C) \u2014 kept below as an alternate in case that's the version you actually play.",
+    sections: [
+      { label: "Verse", lines: [
+        { chordLine: "G  Em  C  D  (2x)" },
+        { chordLine: "C  D" },
+        { chordLine: "Bm  Em" },
+        { chordLine: "Am  A  D" },
+      ]},
+      { label: "Chorus", lines: [
+        { chordLine: "G" },
+        { chordLine: "Em" },
+        { chordLine: "C" },
+        { chordLine: "D" },
+        { chordLine: "Am  B" },
+        { chordLine: "Em  D  A" },
+        { chordLine: "Am  D  G" },
+      ]},
+      { label: "Alternate team arrangement (key of E)", lines: [
+        { chordLine: "E  A   E  A   F#m  B  G#m  C#m  F#m  A  B  (repeat)" },
+        { chordLine: "Chorus:  E  C#m  A  F#m  B" },
+        { chordLine: "G#sus  G#  C#m  (Bb  Bb)  F#  B  E" },
+        { chordLine: "Key change:  C7  F  Dm  Bb  Gm  C  Asus  A  Dm  (C  B)" },
+        { chordLine: "Bb  C  Dm  Bb  Csus  F" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "welcome-to-the-family",
+    title: "Welcome to the Family",
+    key: "G",
+    favorite: false,
+    note: "Chords only, transcribed as noted.",
+    sections: [
+      { label: "Intro / Chorus", lines: [
+        { chordLine: "G  Am  D  G  Am  C  D  (2x)" },
+      ]},
+      { label: "Verse", lines: [
+        { chordLine: "Am  D  G   Am  D  G" },
+        { chordLine: "Am  D  G  Em  Am  D" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "we-will-serve-the-lord",
+    title: "We Will Serve the Lord",
+    key: "C",
+    favorite: false,
+    note: "Chords and structure transcribed from a printed lyric sheet; this is a widely-used, published worship song, so lyrics were intentionally left out \u2014 please add them yourself using the [Chord]lyric format.",
+    sections: [
+      { label: "Intro", lines: [
+        { chordLine: "F  G  F  C  /  G7" },
+      ]},
+      { label: "Verse 1", lines: [
+        { chordLine: "C" },
+        { chordLine: "G" },
+        { chordLine: "Am" },
+        { chordLine: "Em" },
+        { chordLine: "F" },
+        { chordLine: "C" },
+        { chordLine: "Dm" },
+        { chordLine: "G  G7" },
+      ]},
+      { label: "Verse 2", lines: [
+        { chordLine: "(same chord pattern as Verse 1)" },
+        { chordLine: "ends on:  Dm  G  C  C7" },
+      ]},
+      { label: "Chorus", lines: [
+        { chordLine: "F  G  Em  Am" },
+        { chordLine: "F  G  C  C7" },
+        { chordLine: "F  G  Em  Am" },
+        { chordLine: "F  G  F  C" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "lord-i-lift-your-name-on-high",
+    title: "Lord, I Lift Your Name on High",
+    key: "G",
+    favorite: false,
+    note: "Chords only, transcribed as noted. A well-known, published worship classic \u2014 no lyrics included.",
+    sections: [
+      { label: "Intro", lines: [
+        { chordLine: "G  C  D  C  (6x)" },
+      ]},
+      { label: "Bridge", lines: [
+        { chordLine: "G  C  D  B7  Em  Am  D  G  (C  D)" },
+      ]},
+      { label: "Ending", lines: [
+        { chordLine: "G  Em  Am  D   G  Em  Am  D  G" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "you-are-holy",
+    title: "You Are Holy",
+    composer: "Michael W. Smith",
+    key: "G",
+    favorite: false,
+    note: "From a published chord/lyric sheet \u2014 chords and structure transcribed as shown; lyrics intentionally left out, please add them yourself using the [Chord]lyric format. Your team also had a simpler chat-note arrangement (also in G) \u2014 kept below as an alternate.",
+    sections: [
+      { label: "Intro", lines: [
+        { chordLine: "G  -  -  C  -  D   (2x)" },
+      ]},
+      { label: "Verse 1", lines: [
+        { chordLine: "G" },
+        { chordLine: "C" },
+        { chordLine: "Am" },
+        { chordLine: "D" },
+      ]},
+      { label: "Verse 2", lines: [
+        { chordLine: "G" },
+        { chordLine: "C" },
+        { chordLine: "Am" },
+        { chordLine: "D - D  G - G   D - D  G - G" },
+      ]},
+      { label: "Chorus", lines: [
+        { chordLine: "C   D   Em   G/B" },
+        { chordLine: "C   D   Em   G/B" },
+        { chordLine: "C   D   Em   G/B" },
+        { chordLine: "C   D   Em   A" },
+        { chordLine: "C   D  (pause \u2192 Intro)" },
+      ]},
+      { label: "Structure notes", lines: [
+        { chordLine: "Repeat Verses 1 & 2 \u2192 Repeat Chorus \u2192 Interlude (Intro in G only) \u2192 Repeat Chorus (build up) \u2192 C  D (long pause)" },
+      ]},
+      { label: "Outro", lines: [
+        { chordLine: "Em  D/F#  C  G-G  C-C  (x4)" },
+      ]},
+      { label: "Ending", lines: [
+        { chordLine: "D-D  G-G" },
+      ]},
+      { label: "Alternate team arrangement", lines: [
+        { chordLine: "Intro:  G  G  C  D  (2x, pause)" },
+        { chordLine: "G  C  Am  D" },
+        { chordLine: "G  C  Am  G" },
+        { chordLine: "C  D  Em  Bm  (3x)" },
+        { chordLine: "C  D  Em  Am7  C  D  G" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "i-will-sing-forever",
+    title: "I Will Sing Forever",
+    key: "F",
+    favorite: false,
+    note: "Chords only, transcribed as noted.",
+    sections: [
+      { label: "Intro", lines: [
+        { chordLine: "F  Bb  F  F  C  Bb  C  F  C  Bb  C  F" },
+        { chordLine: "C  Bb  C  F  (2x)" },
+      ]},
+      { label: "Verse", lines: [
+        { chordLine: "F  C  Bb  C  Dm  Am  Bb  F  Bb  C  F" },
+        { chordLine: "(F  Bb  F  Bb)" },
+      ]},
+      { label: "Chorus", lines: [
+        { chordLine: "F  C  Bb  C  F  Dm  Am  Bb  F  Bb  C  F  (D)" },
+      ]},
+      { label: "Bridge / Tag", lines: [
+        { chordLine: "G  D  C  D  G  Em  Bm  C  G  C  G  Am  D" },
+        { chordLine: "C  Bm  Am  Am7  D   C  Bm  Am  Am7  D" },
+        { chordLine: "G  D  C  D  G  D  C  D  G" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "buhay-pagmamahal",
+    title: "Buhay Pagmamahal",
+    subtitle: "Awit sa Paghahanda ng mga Alay",
+    composer: "Titik ni Crispulo Pangilinan \u2014 Musika ni Fr. Eduardo P. Hontiveros, SJ",
+    key: "Gm",
+    favorite: false,
+    note: "From published SATB choral sheet music (copyrighted). Chord progression transcribed as shown; lyrics intentionally left out \u2014 please add them yourself using the [Chord]lyric format.",
+    sections: [
+      { label: "Part 1", lines: [
+        { chordLine: "Gm  Cm/G  Gm  Eb  F  Bb/F" },
+      ]},
+      { label: "Part 2", lines: [
+        { chordLine: "Cm6  D7  D/F#  Gm  Cm6  Gm/D  D7  Gm" },
+      ]},
+      { label: "Verse 1\u20133", lines: [
+        { chordLine: "F7  Bb  F7  Bb  D7" },
+        { chordLine: "Gm  A7  D7" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "goodbye-yesterday",
+    title: "Goodbye Yesterday",
+    composer: "Elevation Rhythm",
+    key: "G (original G#, capo 1)",
+    favorite: false,
+    note: "From a published chord/lyric sheet (Elevation Rhythm, copyrighted). Chords and structure transcribed as shown; lyrics intentionally left out \u2014 please add them yourself using the [Chord]lyric format.",
+    sections: [
+      { label: "Intro", lines: [
+        { chordLine: "G  (4x)   C  (4x)" },
+      ]},
+      { label: "Verse 1\u20133", lines: [
+        { chordLine: "G" },
+        { chordLine: "G  (or C, or G/B \u2014 varies by verse)" },
+        { chordLine: "G  (or G/B)" },
+        { chordLine: "C  G  G" },
+      ]},
+      { label: "Chorus 1", lines: [
+        { chordLine: "G" },
+        { chordLine: "C" },
+        { chordLine: "G/B" },
+        { chordLine: "C" },
+      ]},
+      { label: "Chorus 2 (2x)", lines: [
+        { chordLine: "C  D  Em" },
+        { chordLine: "C  D  Em" },
+        { chordLine: "C  D  Em" },
+        { chordLine: "Am  D" },
+      ]},
+      { label: "Interlude", lines: [
+        { chordLine: "G  (4x)" },
+      ]},
+      { label: "Bridge (4x)", lines: [
+        { chordLine: "G \u2013 Am" },
+        { chordLine: "G \u2013 Am" },
+        { chordLine: "G \u2013 Am" },
+        { chordLine: "Em  D  C" },
+      ]},
+      { label: "Tag (2x)", lines: [
+        { chordLine: "G" },
+        { chordLine: "G" },
+        { chordLine: "G" },
+        { chordLine: "Em  D  C" },
+      ]},
+      { label: "Outro", lines: [
+        { chordLine: "G  (4x, then G \u2013 Am \u2013 G/B \u2013 C)" },
+        { chordLine: "Em  D  C  C" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "tribes",
+    title: "Tribes",
+    composer: "Every Nation Music",
+    key: "D (original Eb, capo 1)",
+    favorite: false,
+    note: "From a published chord/lyric sheet (Every Nation Music, copyrighted).\u2014",
+    sections: [
+      { label: "Intro", lines: [
+        { chordLine: "D  G  D  G" },
+      ]},
+      { label: "Verse 1", lines: [
+        { chordLine: "D  G" },
+        { chordLine: "D  G" },
+        { chordLine: "D  G" },
+        { chordLine: "Bm7  G" },
+      ]},
+      { label: "Pre-chorus", lines: [
+        { chordLine: "A  Bm7" },
+        { chordLine: "A" },
+        { chordLine: "G" },
+      ]},
+      { label: "Chorus", lines: [
+        { chordLine: "D" },
+        { chordLine: "G" },
+        { chordLine: "Bm" },
+        { chordLine: "G" },
+      ]},
+      { label: "Bridge 1 (2x)", lines: [
+        { chordLine: "D  G" },
+      ]},
+      { label: "Bridge 2", lines: [
+        { chordLine: "D  G  D  G  (English)" },
+        { chordLine: "D  G  D  G  (Tagalog / Spanish, same chords)" },
+      ]},
+      { label: "Outro (4x)", lines: [
+        { chordLine: "D" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "praise",
+    title: "Praise",
+    composer: "Steven Furtick, Chandler Moore, Brandon Lake, Pat Barrett, Cody Carnes, Chris Brown (Elevation Worship)",
+    key: "A",
+    favorite: false,
+    note: "CCLI #7213077. From a published chord/lyric sheet, all rights reserved.\u2014",
+    sections: [
+      { label: "Vamp", lines: [
+        { chordLine: "(no chords given \u2014 vocal only)" },
+      ]},
+      { label: "Verse 1\u20132", lines: [
+        { chordLine: "A" },
+        { chordLine: "D/A  A" },
+        { chordLine: "E/A" },
+        { chordLine: "D/A  A" },
+        { chordLine: "A" },
+        { chordLine: "D/A  A" },
+        { chordLine: "E/G#  D/A" },
+        { chordLine: "A" },
+      ]},
+      { label: "Pre-chorus", lines: [
+        { chordLine: "E" },
+        { chordLine: "D" },
+      ]},
+      { label: "Chorus 1\u20132", lines: [
+        { chordLine: "F#m  D  A" },
+        { chordLine: "E" },
+        { chordLine: "F#m  D  A" },
+        { chordLine: "E" },
+      ]},
+      { label: "Bridge 1\u20132", lines: [
+        { chordLine: "A  (x6)" },
+        { chordLine: "Bridge 2 uses:  A  Bm  F#m  D" },
+      ]},
+      { label: "Instrumental", lines: [
+        { chordLine: "F#m  /  D  /  A  /  E  (2x)" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "same-god",
+    title: "Same God",
+    composer: "Steven Furtick, Brandon Lake, Pat Barrett, Chris Brown (Elevation Worship)",
+    key: "Db",
+    favorite: false,
+    note: "CCLI #7183537. From a published chord/lyric sheet.\u2014",
+    sections: [
+      { label: "Intro (2x)", lines: [
+        { chordLine: "Db   Gb/Db  Db" },
+      ]},
+      { label: "Verse 1\u20132", lines: [
+        { chordLine: "Db  Gb/Db  Db  (x2)" },
+        { chordLine: "Bbm  Gb  (or Bbm  Ab  Gb)" },
+        { chordLine: "Db  Gb/Db  Db  (x2)" },
+        { chordLine: "Bbm  Gb" },
+      ]},
+      { label: "Chorus", lines: [
+        { chordLine: "Db  Ab/C" },
+        { chordLine: "Bbm  Ab  Gb" },
+        { chordLine: "Db/F  Gb  Ab" },
+        { chordLine: "Db  Ab/C" },
+        { chordLine: "Bbm  Ab  Gb  Db/F" },
+      ]},
+      { label: "Bridge 1\u20132 (\u201cthen / now\u201d pattern)", lines: [
+        { chordLine: "Db" },
+        { chordLine: "Bbm" },
+        { chordLine: "Gb  (or Gb  Db/F)" },
+        { chordLine: "Gb  Ab   (repeats through several \u201cthen/now\u201d couplets)" },
+      ]},
+      { label: "Verse 3", lines: [
+        { chordLine: "Db  Gb/Db  Db" },
+        { chordLine: "Db  Gb/Bb  Db/Ab  Gb  Db/F  Db" },
+      ]},
+      { label: "Tag", lines: [
+        { chordLine: "Gb/Bb  Db/Ab  Gb  Db/F  Db  (2x)" },
+      ]},
+      { label: "Instrumentals", lines: [
+        { chordLine: "Db  /  Gb/Db Db   |  Bbm  /  Gb  /  Gb/Ab" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "washed",
+    title: "Washed",
+    composer: "Elevation Rhythm (Joe L. Barnes, Josh Holiday, Mitch Wong, Steven Furtick)",
+    key: "B",
+    favorite: false,
+    note: "Published, copyrighted song. \u2014",
+    sections: [
+      { label: "Turn 1", lines: [
+        { chordLine: "B/D#  E     F#/A#  G#m     B/D#  E     F#/A#  G#m" },
+      ]},
+      { label: "Verse 1\u20132", lines: [
+        { chordLine: "B/D#  E  F#/A#  G#m   B/D#  E" },
+        { chordLine: "F#/A#  G#m   B/D#  E  F#/A#  G#m  C#m" },
+        { chordLine: "F#sus   B/D#  E  F#/A#  G#m   B/D#  E" },
+        { chordLine: "F#/A#  G#m   B/D#  E  F#/A#  G#m  C#m" },
+        { chordLine: "F#sus" },
+      ]},
+      { label: "Chorus", lines: [
+        { chordLine: "B   E" },
+        { chordLine: "G#m   F#sus" },
+        { chordLine: "B   E" },
+        { chordLine: "G#m   F#sus" },
+      ]},
+      { label: "Turn 2", lines: [
+        { chordLine: "B  B" },
+      ]},
+      { label: "Bridge 1 (4x)", lines: [
+        { chordLine: "B   E" },
+        { chordLine: "G#m   E" },
+      ]},
+      { label: "Bridge 2", lines: [
+        { chordLine: "B   E" },
+        { chordLine: "G#m   E" },
+      ]},
+      { label: "Turn 3 (2x)", lines: [
+        { chordLine: "B/D#  E  F#/A#  G#m   B/D#  E  F#/A#  G#m" },
+        { chordLine: "B/D#  E  F#/A#  G#m   C#m   F#sus" },
+      ]},
+      { label: "End", lines: [
+        { chordLine: "B" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "nothing-is-impossible",
+    title: "Nothing Is Impossible",
+    composer: "Planetshakers",
+    key: "C",
+    favorite: false,
+    note: "Published, copyrighted song. \u2014",
+    sections: [
+      { label: "Chorus", lines: [
+        { chordLine: "C" },
+        { chordLine: "F" },
+        { chordLine: "C  G  Am" },
+        { chordLine: "F" },
+      ]},
+      { label: "Interlude", lines: [
+        { chordLine: "F  C  Dm  F  (2x)" },
+      ]},
+      { label: "Verse", lines: [
+        { chordLine: "C  Dm  F" },
+        { chordLine: "Am  G  F" },
+      ]},
+      { label: "Pre-Chorus", lines: [
+        { chordLine: "Am  G  F" },
+        { chordLine: "Am  G  Dm  F" },
+      ]},
+      { label: "Chorus (repeat)", lines: [
+        { chordLine: "C" },
+        { chordLine: "F" },
+        { chordLine: "C  G  Am" },
+        { chordLine: "F" },
+      ]},
+      { label: "Interlude (repeat)", lines: [
+        { chordLine: "F  C  Dm  F  (2x)" },
+      ]},
+      { label: "Verse (repeat)", lines: [
+        { chordLine: "C  Dm  F" },
+        { chordLine: "Am  G  F" },
+      ]},
+      { label: "Pre-Chorus (repeat)", lines: [
+        { chordLine: "Am  G  F" },
+        { chordLine: "Am  G  Dm  F" },
+      ]},
+      { label: "Chorus (repeat)", lines: [
+        { chordLine: "C" },
+        { chordLine: "F" },
+        { chordLine: "C  G  Am" },
+        { chordLine: "F" },
+      ]},
+      { label: "Interlude", lines: [
+        { chordLine: "F  C  Dm  F" },
+      ]},
+      { label: "Bridge", lines: [
+        { chordLine: "F  C" },
+        { chordLine: "Dm  F" },
+        { chordLine: "F  C" },
+        { chordLine: "Dm  F" },
+      ]},
+      { label: "Chorus (repeat)", lines: [
+        { chordLine: "C" },
+        { chordLine: "F" },
+        { chordLine: "C  G  Am" },
+        { chordLine: "F" },
+      ]},
+      { label: "Bridge (repeat)", lines: [
+        { chordLine: "F  C" },
+        { chordLine: "Dm  F" },
+        { chordLine: "F  C" },
+        { chordLine: "Dm  F" },
+      ]},
+      { label: "Ending", lines: [
+        { chordLine: "F" },
+      ]},
+    ],
+  },
+
 ];
