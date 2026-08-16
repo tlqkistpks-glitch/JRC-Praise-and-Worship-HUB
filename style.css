@@ -507,3 +507,15 @@ body { padding-bottom: 24px; }
   .song-body, .song-nav, .set-builder, .song-list { max-width: 640px; margin: 0 auto; width: 100%; }
   .topbar, .search-wrap, .tabs, .song-toolbar { max-width: 640px; margin: 0 auto; }
 }
+.brand-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-subtitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-dim);
+  letter-spacing: 0.3px;
+}
