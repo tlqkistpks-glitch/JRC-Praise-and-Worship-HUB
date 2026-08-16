@@ -41,7 +41,6 @@ const SONGS = [
     title: "Sa Krus",
     key: "C",
     favorite: false,
-    note: "Transcribed from a fragmentary chat note. Section breaks and some chords are uncertain — marked [UNCLEAR]. Please double check against your original source and add lyrics.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "C  Am  B" },
@@ -66,7 +65,6 @@ const SONGS = [
     title: "Aleluya (Antipolo)",
     key: "D",
     favorite: false,
-    note: "Only the intro/opening chords were visible in the screenshot; the rest of the line was compressed/garbled in the photo and is marked [UNCLEAR].",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "D  A  G  A  (2x)" },
@@ -83,7 +81,6 @@ const SONGS = [
     title: "Ama Namin",
     key: "C",
     favorite: false,
-    note: "Chords only, transcribed from a chat note. Includes a second part labeled \u201cSapagkat\u201d (the \u201cFor thine is the kingdom\u201d section of the Lord's Prayer).",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "C  Dm  G  C" },
@@ -108,7 +105,6 @@ const SONGS = [
     title: "Our Father",
     key: "Am",
     favorite: false,
-    note: "English-language setting, chords only. Includes a second section labeled \u201cFor the Kingdom.\u201d",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "Am  Em  C  D  Em" },
@@ -133,7 +129,6 @@ const SONGS = [
     composer: "Joel Echo",
     key: "G",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "G  F  C  D  D7" },
@@ -152,7 +147,6 @@ const SONGS = [
     title: "Kordero (Lamb of God)",
     key: "Em",
     favorite: false,
-    note: "Two chord sections were sent for this song, in two different keys (Em and A) \u2014 possibly two versions/arrangements or a modulating bridge. Both are kept here as separate parts; check which matches your version.",
     sections: [
       { label: "Part 1 \u2013 \u201cKordero Delgado\u201d (Em)", lines: [
         { chordLine: "Intro:  Em  D  C  B" },
@@ -181,7 +175,6 @@ const SONGS = [
     title: "Love and Faith",
     key: "F",
     favorite: false,
-    note: "Chords only, transcribed with the Verse/Chorus/Ending labels as given, including a later verse marked \u201cchange chord.\u201d",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "Cm  D7  Gm  Bbm  F  C  F  (Bb  C)" },
@@ -216,7 +209,6 @@ const SONGS = [
     title: "In Him Alone",
     key: "Em",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "Em  Em+M7  Em7  Em+6  C  Am  D" },
@@ -239,7 +231,6 @@ const SONGS = [
     title: "Anima Christi",
     key: "D",
     favorite: false,
-    note: "Chords only (no lyric text was included in the source). Structure notes from the original: after the first chorus, play the intro once, go back to verse 1, then play the \u201clast chorus\u201d variant shown below.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "D  G  D  G  D  G  (2x)" },
@@ -270,7 +261,6 @@ const SONGS = [
     title: "Psalm 23: Ang Panginoon, Ang Aking Pastol",
     key: "E",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "E  B  C#m  A  B  E  B" },
@@ -292,7 +282,6 @@ const SONGS = [
     title: "Wag Kang Mangamba",
     key: "Bm",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "Bm  F#m  Em  Em7  A7" },
@@ -315,7 +304,6 @@ const SONGS = [
     title: "Pananagutan",
     key: "D",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "G  A  D  Bm  Em  A  D  A" },
@@ -335,7 +323,6 @@ const SONGS = [
     title: "All I Ask of You",
     key: "D (Capo 3)",
     favorite: false,
-    note: "From a printed hymnal page (published/copyrighted). Chords transcribed as shown; lyrics intentionally left out \u2014 please add them yourself using the [Chord]lyric format.",
     sections: [
       { label: "Intro (Capo 3)", lines: [
         { chordLine: "D  F#m7  Bm  D  G  A7  D" },
@@ -360,7 +347,6 @@ const SONGS = [
     composer: "Dan Schutte \u2013 Jim Murray, SJ (based on Psalm 8)",
     key: "F",
     favorite: false,
-    note: "From a printed hymnal page (published/copyrighted work by Dan Schutte). Chords and structure transcribed as shown; lyrics intentionally left out \u2014 please add them yourself using the [Chord]lyric format below, one line per verse.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "F  Gm7  A  Bb  Am  Gm7  F" },
@@ -390,7 +376,6 @@ const SONGS = [
     composer: "Henry Smith",
     key: "Bb",
     favorite: false,
-    note: "Chords only, transcribed as noted. This is a well-known published worship song \u2014 lyrics left out; please add your own.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "Bb  Am  A/C#  Dm  Bb  F  C  F" },
@@ -415,7 +400,6 @@ const SONGS = [
     subtitle: "(Nothing Shall Separate)",
     key: "E",
     favorite: false,
-    note: "From a full lyric+chord tab (published, copyrighted). Chord progression transcribed as shown for each section; lyrics intentionally left out \u2014 please paste them in yourself using the [Chord]lyric format, matching each chord to its word as in your source.",
     sections: [
       { label: "Chorus", lines: [
         { chordLine: "E  A   B7  E  E7" },
@@ -449,7 +433,6 @@ const SONGS = [
     title: "Purihin ang Panginoon",
     key: "D",
     favorite: false,
-    note: "From a full lyric+chord tab (published, copyrighted). Chord progression transcribed as shown for each section; lyrics intentionally left out \u2014 please paste them in yourself using the [Chord]lyric format.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "G  A7  D  Bm  Em  A7  F#7  B7  Em  A7  D" },
@@ -476,7 +459,6 @@ const SONGS = [
     composer: "Philip Gan \u2013 Manoling Francisco, SJ",
     key: "Dm",
     favorite: false,
-    note: "From a printed hymnal page (Bukas Palad songbook, published/copyrighted). Chords and structure transcribed as shown; lyrics intentionally left out \u2014 please add your own using the [Chord]lyric format.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "Dm7  C#m7  Bm7  E" },
@@ -498,7 +480,6 @@ const SONGS = [
     composer: "Arnel Aquino, SJ",
     key: "E",
     favorite: false,
-    note: "From a printed hymnal page (Bukas Palad songbook \u201cHangad\u201d, published/copyrighted). Chords and structure transcribed as shown; lyrics intentionally left out \u2014 please add your own using the [Chord]lyric format.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "E  A  E" },
@@ -524,7 +505,6 @@ const SONGS = [
     composer: "Dan Schutte",
     key: "G",
     favorite: false,
-    note: "Chords only (no lyric text was included in the source). This is a well-known published worship song \u2014 please add your own lyrics.",
     sections: [
       { label: "Chorus", lines: [
         { chordLine: "G  D  Em  G  D" },
@@ -543,7 +523,6 @@ const SONGS = [
     title: "Banal na Templo",
     key: "G",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "G  G  G  Am  D  G  G" },
@@ -566,7 +545,6 @@ const SONGS = [
     subtitle: "Panginoon, Kaawaan Mo Kami (Kyrie)",
     key: "D",
     favorite: false,
-    note: "Two versions were sent \u2014 an English one and a Tagalog one (\u201cPanginoon Kaawaan Mo Kami\u201d) \u2014 kept as separate parts since they may be different settings. Chords only, transcribed as noted.",
     sections: [
       { label: "English \u2013 Intro", lines: [
         { chordLine: "(keyboard)  D  A  G  A" },
@@ -594,7 +572,6 @@ const SONGS = [
     subtitle: "(Gloria)",
     key: "C",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "C  A7  Dm  G  Am  Am7  C  G  Csus  C" },
@@ -616,7 +593,6 @@ const SONGS = [
     subtitle: "(Gloria)",
     key: "Bb",
     favorite: false,
-    note: "Chords only, transcribed as noted \u2014 a longer setting with 3 verses/choruses.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "Bb  F  Bb  Gm  Eb  Bb  Cm  F" },
@@ -664,7 +640,6 @@ const SONGS = [
     title: "Canticle of the Sun",
     key: "G",
     favorite: false,
-    note: "Only the opening was visible before the screenshot was cut off \u2014 marked [UNCLEAR]. Add the rest once you have it.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "G  C  C  G  G  C  C" },
@@ -683,7 +658,6 @@ const SONGS = [
     title: "Aleluya (Delgado)",
     key: "E",
     favorite: false,
-    note: "Chords only, transcribed as noted. A different setting from \u201cAleluya (Antipolo)\u201d already in this library.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "E  A  B  E   A  B  E  (B)" },
@@ -703,7 +677,6 @@ const SONGS = [
     subtitle: "(English Version)",
     key: "F",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "F  C  Gm  C  F  (Bb  C)" },
@@ -722,7 +695,6 @@ const SONGS = [
     title: "Unang Alay",
     key: "C",
     favorite: false,
-    note: "From a full chord+lyric sheet (published, copyrighted Filipino liturgical song). Chords and structure transcribed as shown; lyrics intentionally left out \u2014 please add them yourself using the [Chord]lyric format below, matching each chord to its word/syllable as in your source.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "C  G  Am  Am7  BbM7  G" },
@@ -753,7 +725,6 @@ const SONGS = [
     title: "Handog Namin sa Iyo, Ama",
     key: "F",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "F  Bb  Gm  Cm  F  Bb" },
@@ -775,7 +746,6 @@ const SONGS = [
     subtitle: "(Light from Light \u2014 Sanctus)",
     key: "C",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "C  G  D  G" },
@@ -798,7 +768,6 @@ const SONGS = [
     subtitle: "(Memorial Acclamation)",
     key: "C",
     favorite: false,
-    note: "Chords only (with the acclamation's own title line, which is short enough to keep as a section header). This is a well-known published Mass setting text \u2014 chords only, no further lyrics added.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "C  D  Gsus  G" },
@@ -818,7 +787,6 @@ const SONGS = [
     subtitle: "(New \u2014 \u201cAsua\u201d)",
     key: "A",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Verse", lines: [
         { chordLine: "A  D  A  G  D  G  D  A  A" },
@@ -833,7 +801,6 @@ const SONGS = [
     title: "Santo Antonio",
     key: "Em",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "Em  D  C  B  B7" },
@@ -856,7 +823,6 @@ const SONGS = [
     title: "Elim Is My Home",
     key: "G",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "G  D  G  D" },
@@ -892,7 +858,6 @@ const SONGS = [
     subtitle: "(\u201cFall on Me Now\u201d \u2014 City Harvest Church)",
     key: "G",
     favorite: false,
-    note: "Published, copyrighted song by City Harvest Church. Chords transcribed from the official chart; lyrics intentionally left out \u2014 please add them yourself using the [Chord]lyric format. Your team also had a chat note with a different key/arrangement (in E, with a key-change bridge to C) \u2014 kept below as an alternate in case that's the version you actually play.",
     sections: [
       { label: "Verse", lines: [
         { chordLine: "G  Em  C  D  (2x)" },
@@ -925,7 +890,6 @@ const SONGS = [
     title: "Welcome to the Family",
     key: "G",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Intro / Chorus", lines: [
         { chordLine: "G  Am  D  G  Am  C  D  (2x)" },
@@ -943,7 +907,6 @@ const SONGS = [
     title: "We Will Serve the Lord",
     key: "C",
     favorite: false,
-    note: "Chords and structure transcribed from a printed lyric sheet; this is a widely-used, published worship song, so lyrics were intentionally left out \u2014 please add them yourself using the [Chord]lyric format.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "F  G  F  C  /  G7" },
@@ -977,7 +940,6 @@ const SONGS = [
     title: "Lord, I Lift Your Name on High",
     key: "G",
     favorite: false,
-    note: "Chords only, transcribed as noted. A well-known, published worship classic \u2014 no lyrics included.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "G  C  D  C  (6x)" },
@@ -998,7 +960,6 @@ const SONGS = [
     composer: "Michael W. Smith",
     key: "G",
     favorite: false,
-    note: "From a published chord/lyric sheet \u2014 chords and structure transcribed as shown; lyrics intentionally left out, please add them yourself using the [Chord]lyric format. Your team also had a simpler chat-note arrangement (also in G) \u2014 kept below as an alternate.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "G  -  -  C  -  D   (2x)" },
@@ -1047,7 +1008,6 @@ const SONGS = [
     title: "I Will Sing Forever",
     key: "F",
     favorite: false,
-    note: "Chords only, transcribed as noted.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "F  Bb  F  F  C  Bb  C  F  C  Bb  C  F" },
@@ -1076,7 +1036,6 @@ const SONGS = [
     composer: "Titik ni Crispulo Pangilinan \u2014 Musika ni Fr. Eduardo P. Hontiveros, SJ",
     key: "Gm",
     favorite: false,
-    note: "From published SATB choral sheet music (copyrighted). Chord progression transcribed as shown; lyrics intentionally left out \u2014 please add them yourself using the [Chord]lyric format.",
     sections: [
       { label: "Part 1", lines: [
         { chordLine: "Gm  Cm/G  Gm  Eb  F  Bb/F" },
@@ -1098,7 +1057,6 @@ const SONGS = [
     composer: "Elevation Rhythm",
     key: "G (original G#, capo 1)",
     favorite: false,
-    note: "From a published chord/lyric sheet (Elevation Rhythm, copyrighted). Chords and structure transcribed as shown; lyrics intentionally left out \u2014 please add them yourself using the [Chord]lyric format.",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "G  (4x)   C  (4x)" },
@@ -1150,7 +1108,6 @@ const SONGS = [
     composer: "Every Nation Music",
     key: "D (original Eb, capo 1)",
     favorite: false,
-    note: "From a published chord/lyric sheet (Every Nation Music, copyrighted).\u2014",
     sections: [
       { label: "Intro", lines: [
         { chordLine: "D  G  D  G" },
@@ -1192,7 +1149,6 @@ const SONGS = [
     composer: "Steven Furtick, Chandler Moore, Brandon Lake, Pat Barrett, Cody Carnes, Chris Brown (Elevation Worship)",
     key: "A",
     favorite: false,
-    note: "CCLI #7213077. From a published chord/lyric sheet, all rights reserved.\u2014",
     sections: [
       { label: "Vamp", lines: [
         { chordLine: "(no chords given \u2014 vocal only)" },
@@ -1234,7 +1190,6 @@ const SONGS = [
     composer: "Steven Furtick, Brandon Lake, Pat Barrett, Chris Brown (Elevation Worship)",
     key: "Db",
     favorite: false,
-    note: "CCLI #7183537. From a published chord/lyric sheet.\u2014",
     sections: [
       { label: "Intro (2x)", lines: [
         { chordLine: "Db   Gb/Db  Db" },
@@ -1278,7 +1233,6 @@ const SONGS = [
     composer: "Elevation Rhythm (Joe L. Barnes, Josh Holiday, Mitch Wong, Steven Furtick)",
     key: "B",
     favorite: false,
-    note: "Published, copyrighted song. \u2014",
     sections: [
       { label: "Turn 1", lines: [
         { chordLine: "B/D#  E     F#/A#  G#m     B/D#  E     F#/A#  G#m" },
@@ -1324,7 +1278,6 @@ const SONGS = [
     composer: "Planetshakers",
     key: "C",
     favorite: false,
-    note: "Published, copyrighted song. \u2014",
     sections: [
       { label: "Chorus", lines: [
         { chordLine: "C" },
