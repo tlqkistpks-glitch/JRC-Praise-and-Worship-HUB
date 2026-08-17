@@ -1,19 +1,46 @@
 # Worship Songs — your song library website
 
+## It's now an installable app
+The site is a Progressive Web App (PWA), which means your members can
+"install" it from the browser — it gets a real icon on their home screen,
+opens full-screen like a native app, and works offline once installed
+(no signal needed mid-service). No app store, no download size, nothing
+to approve.
+
+**On Android (Chrome):** open the site, tap the **Install** banner at the
+top (or the browser's menu → "Install app" / "Add to Home screen").
+
+**On iPhone (Safari):** open the site, tap the **Share** button, then
+**"Add to Home Screen."** iOS doesn't allow the automatic install banner
+Android gets, so the site shows instructions instead.
+
+### Important: bump the cache version when you update songs
+Open `service-worker.js` and change this line:
+```js
+const CACHE_VERSION = "jrc-chords-v1";
+```
+to `"jrc-chords-v2"`, `"v3"`, etc. every time you redeploy with new or
+edited songs. This is what tells phones that already installed the app
+"there's an update, go fetch it" — otherwise people who installed it may
+keep seeing an old song list even after you update the live site.
+
 ## Opening it
 Double-click `index.html` to open it in your phone or computer's browser.
 It works fully offline once opened — no install needed. To use it as a
 "real" website (a link you can bookmark), upload the whole folder to any
-free static host (GitHub Pages, Netlify, Vercel, etc.) — all five files
-need to stay in the same folder.
+free static host (GitHub Pages, Netlify, Vercel, etc.) — all files
+need to stay in the same folder, including the `icons` folder.
 
 ## Files
 - `index.html` — page structure (library, song view, line-up player)
 - `style.css` — all visual styling, light/dark mode
 - `app.js` — chord transposition engine + rendering logic
-- `main.js` — screen navigation, search, favorites, line-ups
+- `main.js` — screen navigation, search, favorites, line-ups, install prompt
 - `data.js` — **your songs live here.** This is the only file you'll
   normally need to touch.
+- `manifest.json` — app name, icon, and colors used when installed
+- `service-worker.js` — enables offline use and installability
+- `icons/` — the app icon at various sizes
 
 ## Adding a new song
 Open `data.js` in any text editor and copy one of the existing song

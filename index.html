@@ -4,6 +4,18 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <title>JRC Praise & Worship</title>
+
+<!-- Installable app support -->
+<link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#102d17" />
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="icons/favicon-16.png" sizes="16x16" type="image/png" />
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="JRC Chords" />
+<meta name="mobile-web-app-capable" content="yes" />
+
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,9 +23,12 @@
   <!-- ============================ LIBRARY VIEW ============================ -->
   <div id="view-library" class="view">
     <header class="topbar">
-      <div class="brand-wrap">
-  <h1 class="brand">JRC Praise & Worship</h1>
-  <div class="brand-subtitle">Music Ministry Chords</div>
+      <div class="brand-wrap brand-wrap-with-logo">
+  <img src="icons/icon-192.png" alt="" class="brand-logo" />
+  <div>
+    <h1 class="brand">JRC Praise & Worship</h1>
+    <div class="brand-subtitle">Music Ministry Chords</div>
+  </div>
 </div>
       <button id="theme-toggle-lib" class="icon-btn" aria-label="Toggle dark mode">
         <svg class="icon icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
@@ -23,6 +38,15 @@
 
     <div class="search-wrap">
       <input id="search-input" type="search" placeholder="Search songs…" autocomplete="off" />
+    </div>
+
+    <div id="install-banner" class="install-banner" hidden>
+      <div class="install-banner-text">
+        <strong>Install this app</strong>
+        <span id="install-banner-sub">Get quick access from your home screen, works offline too.</span>
+      </div>
+      <button id="install-banner-btn" class="btn btn-primary btn-small">Install</button>
+      <button id="install-banner-dismiss" class="icon-btn" aria-label="Dismiss">✕</button>
     </div>
 
     <nav class="tabs">
@@ -129,5 +153,12 @@
 <script src="data.js"></script>
 <script src="app.js"></script>
 <script src="main.js"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("service-worker.js").catch(() => {});
+    });
+  }
+</script>
 </body>
 </html>

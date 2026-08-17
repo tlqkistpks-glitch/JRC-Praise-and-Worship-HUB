@@ -402,6 +402,66 @@ function renderSetPlayView(index) {
 els.setplayBackBtn.addEventListener("click", () => navigate("#/"));
 els.setplayExitBtn.addEventListener("click", () => navigate("#/"));
 
+/* ------------------------------ install banner ------------------------------- */
+
+const INSTALL_DISMISSED_KEY = "worship_install_dismissed";
+
+function isStandalone() {
+  return window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+}
+
+function isIOS() {
+  return /iphone|ipad|ipod/i.test(window.navigator.userAgent);
+}
+
+const installBanner = document.getElementById("install-banner");
+const installBannerSub = document.getElementById("install-banner-sub");
+const installBannerBtn = document.getElementById("install-banner-btn");
+const installBannerDismiss = document.getElementById("install-banner-dismiss");
+
+let deferredInstallPrompt = null;
+
+function showInstallBanner() {
+  if (!installBanner) return;
+  if (isStandalone()) return;
+  if (LS.get(INSTALL_DISMISSED_KEY, false)) return;
+  installBanner.hidden = false;
+}
+
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+  if (installBannerBtn) installBannerBtn.hidden = false;
+  showInstallBanner();
+});
+
+if (isIOS() && !isStandalone()) {
+  if (installBannerBtn) installBannerBtn.hidden = true;
+  if (installBannerSub) installBannerSub.textContent = "Tap the Share button, then \u201cAdd to Home Screen.\u201d";
+  showInstallBanner();
+}
+
+if (installBannerBtn) {
+  installBannerBtn.addEventListener("click", async () => {
+    if (!deferredInstallPrompt) return;
+    deferredInstallPrompt.prompt();
+    await deferredInstallPrompt.userChoice;
+    deferredInstallPrompt = null;
+    installBanner.hidden = true;
+  });
+}
+
+if (installBannerDismiss) {
+  installBannerDismiss.addEventListener("click", () => {
+    installBanner.hidden = true;
+    LS.set(INSTALL_DISMISSED_KEY, true);
+  });
+}
+
+window.addEventListener("appinstalled", () => {
+  installBanner.hidden = true;
+});
+
 /* ---------------------------------- boot ------------------------------------ */
 
 render();
