@@ -218,7 +218,10 @@ body { padding-bottom: 24px; }
   gap: 8px;
   padding: 10px 16px;
   overflow-x: auto;
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* old Edge */
 }
+.tabs::-webkit-scrollbar { display: none; }  /* Chrome/Safari/Android */
 
 .tab {
   flex: none;
@@ -252,7 +255,10 @@ body { padding-bottom: 24px; }
   gap: 8px;
   padding: 2px 16px 12px;
   overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+.category-filter::-webkit-scrollbar { display: none; }
 
 .category-chip {
   flex: none;
