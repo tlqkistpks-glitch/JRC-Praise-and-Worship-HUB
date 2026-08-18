@@ -487,3 +487,25 @@ window.addEventListener("appinstalled", () => {
 /* ---------------------------------- boot ------------------------------------ */
 
 render();
+
+/* Splash screen: shown instantly (pure HTML/CSS, no JS needed to appear), then
+   dismissed here once the library has actually rendered. A small minimum
+   display time keeps it from flashing on fast loads while staying snappy. */
+const SPLASH_MIN_MS = 550;
+const splashScreen = document.getElementById("splash-screen");
+if (splashScreen) {
+  const splashStart = Date.now();
+  const dismissSplash = () => {
+    const elapsed = Date.now() - splashStart;
+    const wait = Math.max(0, SPLASH_MIN_MS - elapsed);
+    setTimeout(() => {
+      splashScreen.classList.add("splash-hidden");
+      setTimeout(() => { splashScreen.hidden = true; }, 550);
+    }, wait);
+  };
+  if (document.readyState === "complete") {
+    dismissSplash();
+  } else {
+    window.addEventListener("load", dismissSplash);
+  }
+}
