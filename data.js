@@ -172,6 +172,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "love-and-faith",
+    category: "Communion",
     title: "Love and Faith",
     key: "F",
     favorite: false,
@@ -206,6 +207,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "in-him-alone",
+    category: "Communion",
     title: "In Him Alone",
     key: "Em",
     favorite: false,
@@ -228,6 +230,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "anima-christi",
+    category: "Communion",
     title: "Anima Christi",
     key: "D",
     favorite: false,
@@ -258,6 +261,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "psalm-23-panginoon-pastol",
+    category: "Communion",
     title: "Psalm 23: Ang Panginoon, Ang Aking Pastol",
     key: "E",
     favorite: false,
@@ -279,6 +283,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "wag-kang-mangamba",
+    category: "Communion",
     title: "Wag Kang Mangamba",
     key: "Bm",
     favorite: false,
@@ -301,6 +306,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "pananagutan",
+    category: "Finale",
     title: "Pananagutan",
     key: "D",
     favorite: false,
@@ -372,6 +378,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "give-thanks",
+    category: "Finale",
     title: "Give Thanks",
     composer: "Henry Smith",
     key: "Bb",
@@ -396,6 +403,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "sinong-makapaghihiwalay",
+    category: "Finale",
     title: "Sino\u2019ng Makapaghihiwalay",
     subtitle: "(Nothing Shall Separate)",
     key: "E",
@@ -430,6 +438,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "purihin-ang-panginoon",
+    category: "Entrance",
     title: "Purihin ang Panginoon",
     key: "D",
     favorite: false,
@@ -476,6 +485,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "bayan-magsiawit-na",
+    category: "Entrance",
     title: "Bayan, Magsiawit Na!",
     composer: "Arnel Aquino, SJ",
     key: "E",
@@ -501,6 +511,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "glory-and-praise",
+    category: "Entrance",
     title: "Glory and Praise to our God",
     composer: "Dan Schutte",
     key: "G",
@@ -520,6 +531,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "banal-na-templo",
+    category: "Entrance",
     title: "Banal na Templo",
     key: "G",
     favorite: false,
@@ -673,6 +685,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "munting-alay-english",
+    category: "Offertory",
     title: "Munting Alay",
     subtitle: "(English Version)",
     key: "F",
@@ -692,6 +705,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "unang-alay",
+    category: "Offertory",
     title: "Unang Alay",
     key: "C",
     favorite: false,
@@ -722,6 +736,7 @@ const SONGS = [
   // ---------------------------------------------------------------------
   {
     id: "handog-namin-sa-iyo-ama",
+    category: "Offertory",
     title: "Handog Namin sa Iyo, Ama",
     key: "F",
     favorite: false,
@@ -1342,6 +1357,118 @@ const SONGS = [
       ]},
       { label: "Ending", lines: [
         { chordLine: "F" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "goodness-of-god",
+    title: "Goodness of God",
+    composer: "Bethel Music",
+    key: "A",
+    favorite: false,
+    note: "Published, copyrighted worship song. Chords and structure transcribed from the chart you sent; lyrics intentionally left out \u2014 please add them yourself using the [Chord]lyric format.",
+    sections: [
+      { label: "Intro", lines: [
+        { chordLine: "A  Asus4  A  Asus4" },
+      ]},
+      { label: "Verse 1", lines: [
+        { chordLine: "A" },
+        { chordLine: "D  A" },
+        { chordLine: "E/G#  F#m  D  E" },
+        { chordLine: "F#m  D" },
+        { chordLine: "A  E/G#  F#m" },
+        { chordLine: "D  E  A" },
+      ]},
+      { label: "Chorus", lines: [
+        { chordLine: "D  A" },
+        { chordLine: "D  A  E" },
+        { chordLine: "D  A  E/G#  F#m" },
+        { chordLine: "D  E  A" },
+      ]},
+      { label: "Verse 2", lines: [
+        { chordLine: "A" },
+        { chordLine: "D  A" },
+        { chordLine: "E/G#  F#m  D  E" },
+        { chordLine: "F#m  D" },
+        { chordLine: "A  E/G#  F#m" },
+        { chordLine: "D  E  A" },
+      ]},
+      { label: "Chorus (repeat)", lines: [
+        { chordLine: "D  A" },
+        { chordLine: "D  A  E" },
+        { chordLine: "D  A  E/G#  F#m" },
+        { chordLine: "D  E  A" },
+      ]},
+      { label: "Bridge", lines: [
+        { chordLine: "A/C#  D" },
+        { chordLine: "E  A" },
+        { chordLine: "A/C#  D" },
+        { chordLine: "E  A" },
+        { chordLine: "A/C#  D" },
+        { chordLine: "E  F#m" },
+        { chordLine: "A/C#  D" },
+        { chordLine: "E  A" },
+        { chordLine: "(repeat bridge 2x total, then \u2192 Chorus)" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "be-not-afraid",
+    title: "Be Not Afraid",
+    key: "C",
+    favorite: false,
+    note: "Chords only, transcribed as noted. Includes a key change section.",
+    sections: [
+      { label: "Intro", lines: [
+        { chordLine: "C  F  C  F  Dm   Bb   G" },
+      ]},
+      { label: "Verse", lines: [
+        { chordLine: "C  F  C  F  E7  Am  Am7  F   G  Em  Dm  G  C" },
+        { chordLine: "C  F  C  F  C  Ddim  E  Am  Am7  F" },
+        { chordLine: "Dm  G" },
+      ]},
+      { label: "Key Change (to A)", lines: [
+        { chordLine: "D  G  D  G  F#  Bm  Bm7  G  Em  A  F#m  Bm" },
+        { chordLine: "Em  A  D" },
+      ]},
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  {
+    id: "pagkaka-ibigan",
+    title: "Pagkaka Ibigan",
+    key: "E",
+    favorite: false,
+    note: "Chords only, transcribed as noted. Includes a key change section.",
+    sections: [
+      { label: "Intro", lines: [
+        { chordLine: "E  A  F#m  B" },
+      ]},
+      { label: "Verse", lines: [
+        { chordLine: "E  B  C#m  A  F#m  B" },
+        { chordLine: "E  B  C#m  A  F#m  B" },
+      ]},
+      { label: "Chorus", lines: [
+        { chordLine: "E  E  A  F#m  B  E  (D  E)" },
+        { chordLine: "A  B  G#m  C#m  F#m  B  E" },
+        { chordLine: "A  F#m  B" },
+      ]},
+      { label: "Key Change (to F)", lines: [
+        { chordLine: "C7" },
+        { chordLine: "F  C  Dm  Dm7  Bb  Gm  C" },
+        { chordLine: "F  C  Dm  Dm7  Gm  C" },
+      ]},
+      { label: "Chorus (in F)", lines: [
+        { chordLine: "F  F  Bb  Gm  C  F  (Eb  F)" },
+        { chordLine: "Bb  C  Am  Dm  Gm  C  F" },
+      ]},
+      { label: "Outro", lines: [
+        { chordLine: "Bb  Gm  C" },
       ]},
     ],
   },

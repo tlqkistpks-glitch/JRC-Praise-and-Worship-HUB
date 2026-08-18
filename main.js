@@ -12,6 +12,8 @@ const els = {
   themeToggleLib: document.getElementById("theme-toggle-lib"),
   searchInput: document.getElementById("search-input"),
   tabs: document.querySelectorAll(".tab"),
+  categoryFilter: document.getElementById("category-filter"),
+  categoryChips: document.querySelectorAll(".category-chip"),
   songList: document.getElementById("song-list"),
   setBuilder: document.getElementById("set-builder"),
   setCount: document.getElementById("set-count"),
@@ -50,6 +52,7 @@ const els = {
 };
 
 let activeTab = "all";
+let activeCategory = "";
 let currentListSnapshot = sortedSongs(SONGS); // used for prev/next in song view
 
 const FONT_SIZE_KEY = "worship_font_size";
@@ -105,16 +108,20 @@ function currentQuery() { return els.searchInput.value || ""; }
 
 function listForActiveTab() {
   const base = searchSongs(currentQuery());
+  const withCategory = activeCategory
+    ? base.filter(s => s.category === activeCategory)
+    : base;
   if (activeTab === "favorites") {
     const favs = getFavorites();
-    return base.filter(s => favs.has(s.id));
+    return withCategory.filter(s => favs.has(s.id));
   }
-  return base; // "all" and "set" both browse the full catalog to build/pick from
+  return withCategory; // "all" and "set" both browse the full catalog to build/pick from
 }
 
 function renderLibrary() {
   els.songList.hidden = activeTab === "set";
   els.setBuilder.hidden = activeTab !== "set";
+  if (els.categoryFilter) els.categoryFilter.hidden = activeTab === "set";
 
   const favs = getFavorites();
   const setIds = getWorshipSet();
@@ -156,6 +163,12 @@ function renderLibrary() {
       keyBadge.className = "key-badge";
       keyBadge.textContent = `KEY ${song.key}`;
       meta.appendChild(keyBadge);
+    }
+    if (song.category) {
+      const catBadge = document.createElement("span");
+      catBadge.className = "category-badge";
+      catBadge.textContent = song.category;
+      meta.appendChild(catBadge);
     }
     if (song.composer) {
       const composer = document.createElement("span");
@@ -295,6 +308,15 @@ els.tabs.forEach(tab => {
 els.searchInput.addEventListener("input", () => {
   if (activeTab === "set") return;
   renderLibrary();
+});
+
+els.categoryChips.forEach(chip => {
+  chip.addEventListener("click", () => {
+    els.categoryChips.forEach(c => c.classList.remove("active"));
+    chip.classList.add("active");
+    activeCategory = chip.dataset.category || "";
+    renderLibrary();
+  });
 });
 
 els.themeToggleLib.addEventListener("click", toggleTheme);
